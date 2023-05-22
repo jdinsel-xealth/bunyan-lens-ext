@@ -20,7 +20,7 @@ npm install -g bunyan
 Start the Lens is running, and follow these simple steps:
 
 1. Go to Extensions view (Menu -> File -> Extensions)
-2. Enter the name of this extension, `bunyan-lens-ext`
+2. Enter the name of this extension, `@jdinsel-xealth/bunyan-lens-ext`
 3. Click on the Install button
 4. Make sure the extension is enabled (Lens → Extensions)
 
