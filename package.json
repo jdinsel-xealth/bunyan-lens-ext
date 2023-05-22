@@ -1,6 +1,6 @@
 {
-	"name": "bunyan-lens-ext",
-	"version": "0.0.2",
+	"name": "@jdinsel-xealth/bunyan-lens-ext",
+	"version": "0.0.3",
 	"description": "A bunyan log viewer for Lens",
 	"publisher": "@jdinsel-xealth/bunyan-lens-ext",
 	"main": "dist/main.js",
