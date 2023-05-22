@@ -1,4 +1,5 @@
-import { Main } from "@k8slens/extensions";
+
+import { Renderer } from "@k8slens/extensions"
 
 /**
  * Main.LensExtension api allows you to access, configure, and customize Lens data add
@@ -7,7 +8,7 @@ import { Main } from "@k8slens/extensions";
  * 
  * See more details: <https://docs.k8slens.dev/>
  */
-export default class YourExtensionMain extends Main.LensExtension {
+export default class BunyanExtensionMain extends Renderer.LensExtension {
   /**
    * onActivate is called when your extension has been successfully enabled.
    */

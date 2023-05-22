@@ -1,37 +1,29 @@
 # bunyan-lens-ext README
 
-This is the README for your extension "bunyan-lens-ext". After writing up a brief description, we recommend including the following sections.
+The bunyan-lens-ext provides a bunyan log viewer for Lens. Inspiration came from
+the [lens-mutli-pod-logs](https://github.com/andrea-falco/lens-multi-pod-logs) extension.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+This plugin adds a menu item to the Pods menu in Lens.  When clicked, it will open a new terminal with the bunyan log viewer.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Install bunyan globally:
+
+```bash
+npm install -g bunyan
+```
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+None.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+Enjoy!
 
-### 1.0.0
+### 0.0.1
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release of the bunyan-lens-ext contains minimal functionality and allows
+for the viewing of Logs through the use of the `bunyan` command line tool.
