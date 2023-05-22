@@ -15,6 +15,11 @@
 		"k8slens",
 		"kubernetes"
 	],
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/jdinse-xealth/bunyan-lens-ext.git",
+    "directory": "."
+  },
 	"scripts": {
 		"start": "NODE_ENV=development webpack --watch",
 		"build": "npm run clean && NODE_ENV=production webpack",
@@ -44,5 +49,6 @@
 		"@babel/preset-typescript": "^7.16.7",
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^12.1.5"
-	}
+	},
+	"license": "MIT"
 }
