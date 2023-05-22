@@ -24,6 +24,9 @@ Start the Lens is running, and follow these simple steps:
 3. Click on the Install button
 4. Make sure the extension is enabled (Lens → Extensions)
 
+You may or may not need to refresh (or re-open) Lens for the plugin to render
+the menu item. This may be necessary if Lens is already open on the Pods workload.
+
 ## Known Issues
 
 None.
