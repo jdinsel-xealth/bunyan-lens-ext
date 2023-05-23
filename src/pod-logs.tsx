@@ -9,6 +9,7 @@ const {
 type Pod = Renderer.K8sApi.Pod
 
 export class PodLogs {
+
   /**
    * Get the container name list by a list of pods.
    *
@@ -31,7 +32,6 @@ export class PodLogs {
    * @param props
    * @param containerNames
    * @param resourceNs
-   * @param resourceType
    * @param resourceName
    * @param resourceTitle
    * @returns the MenuItem to show in Lens
@@ -40,7 +40,6 @@ export class PodLogs {
     props: any,
     containerNames: Set<string>,
     resourceNs: string,
-    resourceType: string,
     resourceName: string,
     resourceTitle: string
   ) {
@@ -93,7 +92,7 @@ export class PodLogs {
     resourceTitle: string,
     containerName?: string
   ) {
-    // Generate log command
+    // Generate log command with bunyan
     const cmd = `kubectl logs -f -n ${resourceNs} ${resourceName} -c ${containerName} --tail=300 | bunyan -o short`
 
     // Open new terminal

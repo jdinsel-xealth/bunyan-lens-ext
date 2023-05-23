@@ -53,7 +53,6 @@ export class PodLogsMenuItem extends React.Component<
       this.props,
       containerNames,
       this.pod.getNs(),
-      "pod",
       this.pod.getName(),
       "Logs"
     )
