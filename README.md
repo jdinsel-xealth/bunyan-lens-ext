@@ -29,7 +29,8 @@ the menu item. This may be necessary if Lens is already open on the Pods workloa
 
 ## Known Issues
 
-None.
+On initial install, the bunyan log viewer may not appear in the menu. If this
+occurs, refresh Lens and it should appear.
 
 ## Release Notes
 
