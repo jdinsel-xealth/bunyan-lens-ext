@@ -1,6 +1,6 @@
 {
 	"name": "@jdinsel-xealth/bunyan-lens-ext",
-	"version": "0.0.3",
+	"version": "0.1.0",
 	"description": "A bunyan log viewer for Lens",
 	"publisher": "@jdinsel-xealth/bunyan-lens-ext",
 	"main": "dist/main.js",
@@ -16,10 +16,10 @@
 		"kubernetes"
 	],
 	"repository": {
-    "type": "git",
-    "url": "https://github.com/jdinse-xealth/bunyan-lens-ext.git",
-    "directory": "."
-  },
+		"type": "git",
+		"url": "https://github.com/jdinse-xealth/bunyan-lens-ext.git",
+		"directory": "."
+	},
 	"scripts": {
 		"start": "NODE_ENV=development webpack --watch",
 		"build": "npm run clean && NODE_ENV=production webpack",
