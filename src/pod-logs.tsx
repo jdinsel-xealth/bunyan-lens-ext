@@ -47,7 +47,7 @@ export class PodLogs {
     return (
       <MenuItem
         onClick={Common.Util.prevDefault(() =>
-          this.podLogs(resourceNs, resourceName, resourceTitle)
+          this.podLogs(resourceNs, resourceName, resourceTitle, Array.from(containerNames)?.slice(-1)[0])
         )}
       >
         <Icon
@@ -94,7 +94,7 @@ export class PodLogs {
     containerName?: string
   ) {
     // Generate log command
-    const cmd = `kubectl logs -f -n ${resourceNs} ${resourceName} -c ${containerName} | bunyan -o short`
+    const cmd = `kubectl logs -f -n ${resourceNs} ${resourceName} -c ${containerName} --tail=300 | bunyan -o short`
 
     // Open new terminal
     this.openTerminal(
